@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main_div">
+        <h1 class="main_heading">Music player</h1>
+        <div class="music_container">
+            <h2 id="title">Tarasti hai nigahain</h2>
+            <h3 id="artist">Parth Desai</h3>
+            <div class="img_container">
+                <img src="images\image-1.jpg" alt="enjoy music">
+            </div>
+            <audio src="audio\song-1.mp3"></audio>
+            <!-- progress bar -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">4:46</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <!-- controls -->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="previous"></i>
+                <i class="fas fa-play main_button" id="play" title="play"></i>
+                <i class="fas fa-forward" id="next" title="forward"></i>
+            </div>
+            <!-- volume bar -->
+            <div class="volume_container" id="volume_container">
+                <div class="volume_duration_meter">
+                    <div id="current_volume">100</div>
+                    <i class="fas fa-volume-up" id="volume_icon" title="volume"></i>
+                    <div id="total_volume">100</div>
+                </div>
+                <div class="volume_div" id="volume_div">
+                    <div class="volume1" id="volume1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="sctript.js"></script>
+
+</html>
